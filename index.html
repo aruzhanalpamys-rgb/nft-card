@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      body {
+        background-color: hsl(217, 54%, 11%);
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        margin: 0;
+      }
+      .container {
+        background-color: hsl(216, 50%, 16%);
+        height: 500px;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 40px;
+        border-radius: 10px;
+      }
+      .cubic {
+        width: 320px;
+        height: 320px;
+        display: flex;
+        position: relative;
+        z-index: 2;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .eye {
+        position: absolute;
+        top: 152px;
+        right: 575px;
+        background-color: hsla(178, 100%, 50%, 0.515);
+        padding: 136px;
+        z-index: 1;
+        border-radius: 10px;
+      }
+      .cubic:hover {
+        opacity: 30%;
+      }
+
+      .name {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        gap: 10px;
+      }
+      .avatar {
+        width: 30px;
+        height: 30px;
+        margin-top: 13px;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+      h2 {
+        color: white;
+        font-size: 19px;
+        font-weight: 550;
+        margin-bottom: 0;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      h2:hover {
+        color: hsl(178, 100%, 50%);
+      }
+      .info {
+        color: hsl(215, 51%, 70%);
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .left {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+      .ethereum {
+        width: 10px;
+        height: 17px;
+      }
+      h3 {
+        margin: 0;
+        color: hsl(178, 100%, 50%);
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+      }
+      .days {
+        margin: 0;
+        color: hsl(215, 51%, 70%);
+        font-size: 14px;
+      }
+      .in1line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid hsl(215, 32%, 27%);
+        padding-bottom: 20px;
+      }
+      .clock {
+        width: 15px;
+        height: 17px;
+      }
+      .fullname {
+        margin-top: 20px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img class="cubic" src="images/image-equilibrium.jpg" alt="cubic" />
+        <img class="eye" src="images/icon-view.svg" alt="eye" />
+      </div>
+      <h2>Equilibrium #3429</h2>
+      <p class="info">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="in1line">
+        <div class="left">
+          <img class="ethereum" src="images/icon-ethereum.svg" alt="ethereum" />
+          <h3>0.041 ETH</h3>
+        </div>
+        <div class="right">
+          <img class="clock" src="images/icon-clock.svg" alt="clock" />
+          <p class="days">3 days left</p>
+        </div>
+      </div>
+      <div class="name">
+        <img class="avatar" src="images/image-avatar.png" alt="avatar" />
+        <p class="fullname">
+          <span class="creat" style="color: hsl(215, 51%, 70%)"
+            >Creation of</span
+          ><span class="jules" style="color: white"> Jules Wyvern</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
